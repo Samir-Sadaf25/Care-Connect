@@ -1,0 +1,199 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co.com/YT3K7hYz/istockphoto-1434687410-612x612.jpg",
+        "name": "Dr. Cameron Williamson",
+        "education": "MBBS, MD - General Medicine, DNB",
+        "speciality": "General Physician",
+        "experience": "5 Years",
+        "registrationNumber": "BD12451254",
+        "designation": "Senior Consultant",
+        "workplace": "City Hospital",
+        "fee": "$50",
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ]
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co.com/Qjc5d8x6/istockphoto-2158610739-612x612.webp",
+        "name": "Dr. Sarah Johnson",
+        "education": "MBBS, MS - ENT",
+        "speciality": "ENT Specialist",
+        "experience": "7 Years",
+        "registrationNumber": "BD12458754",
+        "designation": "Consultant",
+        "workplace": "Global Care Clinic",
+        "fee": "$45",
+        "availability": [
+            "Tuesday",
+            "Thursday"
+        ]
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co.com/J9HxC40/nurse-2019420-640.jpg",
+        "name": "Dr. Michael Brown",
+        "education": "MBBS, MD - Pediatrics",
+        "speciality": "Pediatrician",
+        "experience": "10 Years",
+        "registrationNumber": "BD12459832",
+        "designation": "Head of Department",
+        "workplace": "Sunrise Hospital",
+        "fee": "$60",
+        "availability": [
+            "Monday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co.com/G4C3m74d/pexels-photo-5215024.jpg",
+        "name": "Dr. Emily Davis",
+        "education": "MBBS, MD - Dermatology",
+        "speciality": "Dermatologist",
+        "experience": "6 Years",
+        "registrationNumber": "BD12457742",
+        "designation": "Senior Resident",
+        "workplace": "Derma Care Center",
+        "fee": "$55",
+        "availability": [
+            "Wednesday",
+            "Friday",
+            "Sunday"
+        ]
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co.com/NgB72YjB/download.jpg",
+        "name": "Dr. Daniel Martinez",
+        "education": "MBBS, MS - Orthopedics",
+        "speciality": "Orthopedic Surgeon",
+        "experience": "8 Years",
+        "registrationNumber": "BD12458901",
+        "designation": "Orthopedic Specialist",
+        "workplace": "Bone & Joint Hospital",
+        "fee": "$70",
+        "availability": [
+            "Monday",
+            "Thursday"
+        ]
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co.com/k6hS5fSk/premium-photo-1658506671316-0b293df7c72b.jpg",
+        "name": "Dr. Olivia Garcia",
+        "education": "MBBS, MS - Ophthalmology",
+        "speciality": "Eye Specialist",
+        "experience": "9 Years",
+        "registrationNumber": "BD12451232",
+        "designation": "Senior Consultant",
+        "workplace": "Vision Eye Hospital",
+        "fee": "$40",
+        "availability": [
+            "Tuesday",
+            "Friday"
+        ]
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co.com/fGTyhP5Y/premium-photo-1661580574627-9211124e5c3f.jpg",
+        "name": "Dr. James Wilson",
+        "education": "MBBS, MD - Psychiatry",
+        "speciality": "Psychiatrist",
+        "experience": "11 Years",
+        "registrationNumber": "BD12458012",
+        "designation": "Chief Psychiatrist",
+        "workplace": "Mind Care Center",
+        "fee": "$80",
+        "availability": [
+            "Wednesday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co.com/SwC1gjk9/woman-2141808-1280.jpg",
+        "name": "Dr. Sophia Moore",
+        "education": "MBBS, MD - Cardiology",
+        "speciality": "Cardiologist",
+        "experience": "12 Years",
+        "registrationNumber": "BD12451111",
+        "designation": "Cardiology Specialist",
+        "workplace": "Heart Care Hospital",
+        "fee": "$100",
+        "availability": [
+            "Monday",
+            "Thursday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co.com/YT3K7hYz/istockphoto-1434687410-612x612.jpg",
+        "name": "Dr. Benjamin Taylor",
+        "education": "MBBS, MS - Urology",
+        "speciality": "Urologist",
+        "experience": "9 Years",
+        "registrationNumber": "BD12453321",
+        "designation": "Urology Consultant",
+        "workplace": "HealthPlus Hospital",
+        "fee": "$65",
+        "availability": [
+            "Tuesday",
+            "Friday",
+            "Sunday"
+        ]
+    },
+    {
+        "id": 10,
+        "image": "https://i.ibb.co.com/Qjc5d8x6/istockphoto-2158610739-612x612.webp",
+        "name": "Dr. Isabella Anderson",
+        "education": "MBBS, MD - Neurology",
+        "speciality": "Neurologist",
+        "experience": "15 Years",
+        "registrationNumber": "BD12456677",
+        "designation": "Senior Neurologist",
+        "workplace": "Neuro Care Center",
+        "fee": "$110",
+        "availability": [
+            "Monday",
+            "Wednesday"
+        ]
+    },
+    {
+        "id": 11,
+        "image": "https://i.ibb.co.com/J9HxC40/nurse-2019420-640.jpg",
+        "name": "Dr. Lucas Thomas",
+        "education": "MBBS, MS - Surgery",
+        "speciality": "General Surgeon",
+        "experience": "13 Years",
+        "registrationNumber": "BD12459900",
+        "designation": "Chief Surgeon",
+        "workplace": "CityCare Hospital",
+        "fee": "$90",
+        "availability": [
+            "Thursday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 12,
+        "image": "https://i.ibb.co.com/G4C3m74d/pexels-photo-5215024.jpg",
+        "name": "Dr. Mia Jackson",
+        "education": "MBBS, DGO - Gynecology",
+        "speciality": "Gynecologist",
+        "experience": "8 Years",
+        "registrationNumber": "BD12452345",
+        "designation": "Senior Gynecologist",
+        "workplace": "Women's Health Clinic",
+        "fee": "$70",
+        "availability": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ]
+    }
+]
