@@ -1,14 +1,47 @@
 import React from 'react';
-import banner from '../assets/doctor illustration.png'
+import banner from '../assets/banner-img-1.png'
 const HeroSection = () => {
     return (
-        <div className='mt-3 mb-24'>
-            <div>
-                <img className='place-self-center' src={banner} alt="" />
-            </div>
-            <div>
-                <h1 className='text-4xl font-bold text-indigo-400 text-center'>Team of medical proffesionals</h1>
-                <p className='text-center text-gray-500'>Our team of dedicated medical professionals works tirelessly to provide compassionate care and innovative solutions. <br />Together, we strive to create healthier communities and brighter tomorrows.</p>
+        <div className=' mb-24'>
+            <div className="w-full h-[600px] bg-gradient-to-b from-[#f5f5f5] to-white flex flex-col items-center justify-center rounded-2xl p-6 relative overflow-hidden">
+
+                {/* Text Section */}
+                <div className="text-center max-w-3xl">
+                    <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 mt-2.5">
+                        Dependable Care, Backed by Trusted Professionals.
+                    </h1>
+                    <p className="text-gray-600 text-lg mb-6">
+                        Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.
+                        Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.
+                    </p>
+
+                    {/* Search Bar */}
+                    <div className="flex items-center justify-center gap-4">
+                        <input
+                            type="text"
+                            placeholder="Search any doctor..."
+                            className="w-72 md:w-96 p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+                            Search Now
+                        </button>
+                    </div>
+                </div>
+
+                {/* Images Section */}
+                <div className="flex gap-8 mt-12">
+                    <img
+                        src={banner}
+                        alt="Doctor 1"
+                        className="w-[250px] h-[250px] object-cover rounded-xl shadow-lg"
+                    />
+                    <img
+                        src={banner}
+                        alt="Doctor 2"
+                        className="w-[250px] h-[250px] object-cover rounded-xl shadow-lg"
+                    />
+                </div>
+
             </div>
         </div>
     );
