@@ -18,4 +18,11 @@ const addToLocalStorage = (doct) => {
     }
     
 }
-export { addToLocalStorage as addToAppointment,getFromLocalStorage as getAppointmentList }
+
+const removeFromLocalStorage = (id) =>{
+     const data = getFromLocalStorage();
+     const remaining = data.filter(doc => doc.id !== id);
+     localStorage.setItem('doc',JSON.stringify(remaining));
+}
+
+export { addToLocalStorage as addToAppointment,getFromLocalStorage as getAppointmentList, removeFromLocalStorage as cancelAppointment }

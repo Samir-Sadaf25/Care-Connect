@@ -1,12 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import { getAppointmentList } from '../Utilities/LocalStorage';
+import { cancelAppointment, getAppointmentList } from '../Utilities/LocalStorage';
+import { Link } from 'react-router';
 
 const MyBookings = () => {
     const [booking, setBooking] = useState([])
     useEffect(() => {
         const doct = getAppointmentList();
         setBooking(doct);
-    },[])
+    }, [])
+
+    const handleCancelAppointment = (id) => {
+        cancelAppointment(id);
+        setBooking(getAppointmentList());
+    }
+
+    if (booking.length == 0) {
+        return <div className='w-11/12 mx-auto justify-center items-center flex flex-col mt-28 mb-28'>
+            < h1 className='text-4xl font-bold text-center mb-10' > You Have not Booked any appointment yet </h1 >
+            <Link to={'/'}>
+                <button className='mb-2.5 btn-primary btn'>Book an Appointment</button>
+            </Link>
+
+        </div>
+    }
+
+
+
 
     return (
         <div>
@@ -27,7 +46,7 @@ const MyBookings = () => {
                                 <p className="text-xs text-gray-500">Appointment Fee : {booked.fee} $</p>
                             </div>
 
-                            <button  className="w-full border border-red-500 text-red-600 font-semibold text-sm py-2 rounded-full hover:bg-red-50 transition duration-200">
+                            <button onClick={() => handleCancelAppointment(booked.id)} className="w-full border border-red-500 text-red-600 font-semibold text-sm py-2 rounded-full hover:bg-red-50 transition duration-200">
                                 Cancel Appointment
                             </button>
                         </div>
