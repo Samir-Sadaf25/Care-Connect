@@ -18,8 +18,6 @@ const DoctorsList = ({data}) => {
     }, [data, showAll])
 
    
-    
-    console.log("Outter useeffect")
     return (
         <div>
             <div className='place-items-center'>

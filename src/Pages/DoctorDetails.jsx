@@ -1,5 +1,7 @@
+import { ShieldAlert } from 'lucide-react';
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
+import { addToAppointment } from '../Utilities/LocalStorage';
 
 const DoctorDetails = () => {
 
@@ -7,7 +9,9 @@ const DoctorDetails = () => {
     const { id } = useParams();
     const convertedId = parseInt(id);
     const singleDoctor = data.find(doc => doc.id === convertedId);
-    // console.log(singleDoctor);
+    const handleAppointment = () =>{
+        addToAppointment(singleDoctor);    
+    }
     return (
         <div className='mt-12 mb-12 w-11/12 mx-auto'>
             <div className='bg-white text-black  p-10 place-items-center rounded-2xl shadow-sm'>
@@ -55,7 +59,34 @@ const DoctorDetails = () => {
 
                 </div>
             </div>
-        </div>
+
+            <div className=" bg-white rounded-lg shadow-md p-6 border border-gray-200">
+                <div className="flex justify-between items-center mb-4 border-b border-dashed pb-2">
+                    <h2 className="text-lg font-semibold">Book an Appointment</h2>
+                    <span className="bg-green-100 text-green-700 text-sm px-3 py-1 rounded-full">
+                        Doctor Available Today
+                    </span>
+                </div>
+
+                <div className="mb-4">
+                    <h3 className="text-sm font-medium text-gray-700 mb-2">Availability</h3>
+                    <div className="flex items-center text-yellow-700 bg-yellow-100 px-4 py-2 text-sm rounded-md">
+                        <ShieldAlert size={40} />
+                        Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.
+                    </div>
+                </div>
+
+                <Link to={'/MyBookings'}>
+                    <button onClick={handleAppointment}  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-full transition duration-200">
+                        Book Appointment Now
+                    </button>
+
+                </Link>
+            </div>
+
+
+
+        </div >
     );
 };
 
