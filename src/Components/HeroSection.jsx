@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import banner from '../assets/banner-img-1.png'
-const HeroSection = () => {
+const HeroSection = ({ handleSearch }) => {
+
+    const [searchText, setSearchText] = useState('');
+
+
+
     return (
         <div className=' mb-24'>
             <div className="w-full h-[600px] bg-gradient-to-b from-[#f5f5f5] to-white flex flex-col items-center justify-center rounded-2xl p-6 relative overflow-hidden">
@@ -17,14 +22,21 @@ const HeroSection = () => {
 
                     {/* Search Bar */}
                     <div className="flex items-center justify-center gap-4">
-                        <input
-                            type="text"
-                            placeholder="Search any doctor..."
-                            className="w-72 md:w-96 p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                        <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
-                            Search Now
-                        </button>
+                        <form onSubmit={e => {
+                            handleSearch(e, searchText),
+                            setSearchText('') // reset search text
+                        }}>
+                            <input value={searchText}
+                                onChange={e => setSearchText(e.target.value)}
+                                type="text"
+                                placeholder="Search any doctor..."
+                                className="w-72 md:w-96 p-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            />
+                            <button type='Submit' className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition ml-2.5">
+                                Search Now
+                            </button>
+                        </form>
+                       
                     </div>
                 </div>
 
