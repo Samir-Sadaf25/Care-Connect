@@ -24,9 +24,10 @@ const router = createBrowserRouter([
             Component:MyBookings,
          },
          {
-            path:"/DoctorDetails",
+            path:"/DoctorDetails/:id",
             Component:DoctorDetails,
-            loader: () => fetch('Doctors.json')
+            hydrateFallbackElement: <span className="loading loading-bars loading-lg"></span>,
+            loader: () => fetch('../Doctors.json')
          },
          {
             path:"/Blogs",

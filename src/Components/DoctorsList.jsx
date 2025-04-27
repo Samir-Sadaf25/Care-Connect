@@ -6,17 +6,20 @@ const DoctorsList = ({data}) => {
     const [showAll, setShowAll] = useState(false);
     const [doctors, setDoctors] = useState([]);
     useEffect(() => {
-
+        
         if (showAll) {
             setDoctors(data)
         }
         else {
             setDoctors(data.slice(0, 6));
         }
-
-
+        
+        
     }, [data, showAll])
 
+   
+    
+    console.log("Outter useeffect")
     return (
         <div>
             <div className='place-items-center'>
@@ -54,7 +57,7 @@ const DoctorsList = ({data}) => {
                         </div>
 
                         {/* View Details Button */}
-                        <NavLink to={"/DoctorDetails"} className=" mt-2.5 relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50">
+                        <NavLink to={`/DoctorDetails/${doctor.id}`} className=" mt-2.5 relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50">
                             
                                 <span className="absolute left-0 block w-full h-0 transition-all bg-indigo-600 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
                                 <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
